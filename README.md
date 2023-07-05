@@ -11,3 +11,5 @@ Here are the screenshots of our App:
 
 ![addnewdata](https://github.com/SoummoSsj/CardiacRecorder/assets/126937098/3d51e953-3c24-4bf2-adec-f829ebc23c62)
 ![history](https://github.com/SoummoSsj/CardiacRecorder/assets/126937098/4374484d-56d1-40d6-ae45-f408db776175)
+
+To know more about this application click  [ here](../../wiki).
