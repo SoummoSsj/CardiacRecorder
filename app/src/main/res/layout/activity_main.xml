@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bk"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/Icon"
+        android:layout_width="143dp"
+        android:layout_height="163dp"
+        android:src="@drawable/heart"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.099" />
+
+    <TextView
+        android:id="@+id/Title"
+        android:layout_width="265dp"
+        android:layout_height="87dp"
+        android:fontFamily="@font/felipa"
+        android:text="CardiacRecorder"
+        android:textAlignment="center"
+        android:textColor="#E8C2C2"
+        android:textSize="47dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.191" />
+
+    <TextView
+        android:id="@+id/developers"
+        android:layout_width="256dp"
+        android:layout_height="41dp"
+        android:fontFamily="cursive"
+        android:text="By"
+        android:textAlignment="center"
+        android:textColor="#E6D5D5"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Title"
+        app:layout_constraintVertical_bias="0.256" />
+
+    <TextView
+        android:id="@+id/devNames"
+        android:layout_width="261dp"
+        android:layout_height="58dp"
+        android:fontFamily="cursive"
+        android:text="ASHFAQ and SOUMMO"
+        android:textAlignment="center"
+        android:textColor="#E6D5D5"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.513"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/developers"
+        app:layout_constraintVertical_bias="0.0" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
