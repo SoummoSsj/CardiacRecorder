@@ -1,0 +1,309 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="#4F111CD1"
+   >
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp">
+
+        <RelativeLayout
+            android:id="@+id/header"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/UpperTxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:text="ADD NEW DATA"
+                android:textColor="@color/black"
+                android:textSize="20sp">
+
+            </TextView>
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/alertll1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/header"
+            android:orientation="vertical">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/alert0"
+
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+
+                android:layout_height="61dp"
+                app:counterEnabled="true">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/heartrate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Heart Rate"
+                    android:inputType="numberDecimal" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/alert1"
+
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="61dp"
+                android:layout_marginTop="20dp"
+                app:counterEnabled="true">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/systolic"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Systolic Pressure"
+                    android:inputType="numberDecimal" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/alert2"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="61dp"
+                android:layout_marginTop="20dp"
+                app:counterEnabled="true">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/diastole"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Diastolic Pressure"
+                    android:inputType="numberDecimal" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/ImgDate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_baseline_date_range_24"
+
+                    />
+
+                <TextView
+                    android:id="@+id/datetxt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Date:"
+                    android:textSize="20sp" />
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/alertll3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/alertll1">
+
+            <EditText
+                android:id="@+id/date"
+                android:layout_width="60dp"
+                android:layout_height="50dp"
+
+                android:hint="DD"
+                android:inputType="numberDecimal" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="/"
+                android:textSize="30sp"
+
+
+                />
+
+            <EditText
+                android:id="@+id/month"
+                android:layout_width="60dp"
+                android:layout_height="50dp"
+                android:hint="MM"
+                android:inputType="numberDecimal" />
+
+            <TextView
+                android:id="@+id/year"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="/"
+                android:textSize="30sp"
+
+                />
+
+            <EditText
+                android:id="@+id/yearedit"
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:hint="YYYY"
+                android:inputType="numberDecimal" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/AlertLL5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/alertll3">
+
+            <ImageView
+                android:id="@+id/ImgClc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_baseline_access_time_24" />
+
+            <TextView
+
+                android:id="@+id/timetxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/alertll3"
+                android:text="Time:"
+                android:textSize="20sp" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/alertll4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/AlertLL5"
+            android:orientation="horizontal">
+
+            <EditText
+
+                android:id="@+id/hour"
+                android:layout_width="60dp"
+                android:layout_height="50dp"
+                android:hint="HH"
+                android:inputType="numberDecimal" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="numberDecimal"
+                android:text=":"
+
+                android:textSize="30sp"
+
+                />
+
+            <EditText
+                android:id="@+id/minute"
+                android:layout_width="60dp"
+                android:layout_height="50dp"
+                android:hint="MM"
+                android:inputType="numberDecimal" />
+
+            <TextView
+
+                android:id="@+id/AP"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=":"
+                android:textSize="30sp" />
+
+            <Spinner
+                android:id="@+id/spinner"
+                android:layout_width="60dp"
+
+                android:layout_height="40dp"
+                android:layout_weight="1"
+
+                android:spinnerMode="dropdown" />
+
+
+        </LinearLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/CommentL"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="61dp"
+            android:layout_below="@id/alertll4"
+
+            app:counterEnabled="true">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/comment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Comment(optional)"
+                android:inputType="textImeMultiLine" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/CommentL"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <Button
+                    android:id="@+id/Cancel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="54dp"
+                    android:layout_centerHorizontal="true"
+
+                    android:backgroundTint="@android:color/background_dark"
+                    android:text="CANCEL"
+                    android:textColor="@color/white"
+                    app:cornerRadius="50dp"
+                    app:strokeColor="@color/white"
+                    app:strokeWidth="2dp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <Button
+                    android:id="@+id/Add"
+                    android:layout_width="wrap_content"
+                    android:layout_height="54dp"
+                    android:layout_centerHorizontal="true"
+
+
+                    android:backgroundTint="@android:color/background_dark"
+                    android:text="CONFIRM"
+                    android:textColor="@color/white"
+                    app:cornerRadius="50dp"
+                    app:strokeColor="@color/white"
+                    app:strokeWidth="2dp" />
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+</ScrollView>
